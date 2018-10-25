@@ -2,10 +2,9 @@
 # First, let us create some utility functions for Plotting
 #
 
-
 def pd_centers(featuresUsed, centers):
 	from itertools import cycle, islice
-	from pandas.tools.plotting import parallel_coordinates
+	from pandas.plotting import parallel_coordinates
 	import matplotlib.pyplot as plt
 	import pandas as pd
 	import numpy as np
