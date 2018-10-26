@@ -21,10 +21,13 @@ with open('98-0.txt', 'r') as f:
 
             if word not in stop_words:
                 if word in dict:
-                    dict[word]
+                    dict[word] = dict[word] + 1
                 else:
                     dict.update({word:1}) 
 
-# Remove the stop words from the words object
 
-# Create a word dictionary object 
+key_max = max(dict.keys(), key=(lambda k: dict[k]))
+key_min = min(dict.keys(), key=(lambda k: dict[k]))
+
+print('Maximum Value: ',dict[key_max])
+print('Minimum Value: ',dict[key_min])
