@@ -1,2 +1,4 @@
 *.ini
 *.sqlite
+.DS_Store
+.vscode/launch.json
